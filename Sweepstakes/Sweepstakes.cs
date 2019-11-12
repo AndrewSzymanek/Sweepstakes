@@ -34,9 +34,7 @@ namespace Sweepstakes
         public void PrintContestantInfo(Contestant contestant)
         {
             int winner = PickWinner(contestant);
-            string winnerName;
         }
 
-        //int registration number, string firstName, string lastName?
     }
 }
