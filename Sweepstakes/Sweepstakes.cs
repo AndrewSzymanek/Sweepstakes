@@ -8,5 +8,15 @@ namespace Sweepstakes
 {
     class Sweepstakes
     {
+        //member variables
+
+
+        //constructor
+        public Sweepstakes()
+        {
+
+        }
+
+        //member methods
     }
 }

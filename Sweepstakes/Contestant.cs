@@ -12,7 +12,7 @@ namespace Sweepstakes
         public string firstName;
         public string lastName;
         public string emailAddress;
-        public int registrationNum;
+        public int registrationNumber;
 
         //constructor 
         public Contestant()
@@ -20,6 +20,7 @@ namespace Sweepstakes
             firstName = UserInterface.GetFirstName();
             lastName = UserInterface.GetLastName();
             emailAddress = UserInterface.GetEmailAddress();
+            registrationNumber = UserInterface.GetRegNum();
         }
 
         //member methods
