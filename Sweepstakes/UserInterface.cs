@@ -9,11 +9,23 @@ namespace Sweepstakes
     public static class UserInterface
     {
 
-        public string GetName()
-        {
-            
+        public static string GetFirstName()
+        {          
             Console.WriteLine("Please enter your first name.");
-         
+            string firstName = Console.ReadLine();
+            return firstName;       
+        }
+        public static string GetLastName()
+        {
+            Console.WriteLine("Please enter your last name.");
+            string lastName = Console.ReadLine();
+            return lastName;
+        }
+        public static string GetEmailAddress()
+        {
+            Console.WriteLine("Please enter your email.");
+            string emailAddress = Console.ReadLine();
+            return emailAddress;
         }
     }
 }
