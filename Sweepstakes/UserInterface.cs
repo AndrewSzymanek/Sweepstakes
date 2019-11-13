@@ -8,8 +8,6 @@ namespace Sweepstakes
 {
     public static class UserInterface
     {
-        public static int registrationNumber = 0;
-
 
         public static string GetFirstName()
         {          
@@ -29,7 +27,6 @@ namespace Sweepstakes
             string emailAddress = Console.ReadLine();
             return emailAddress;
         }
-      
         public static void PrintWinner(Contestant contestant)
         {
             Console.WriteLine($"The winner is: {contestant.firstName} {contestant.lastName}, {contestant.emailAddress}.");
