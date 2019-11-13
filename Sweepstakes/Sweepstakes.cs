@@ -10,7 +10,6 @@ namespace Sweepstakes
     {
         //member variables
         Random randomNumber;
-
         Dictionary<int, Contestant> contestants;
 
         //constructor
@@ -26,14 +25,22 @@ namespace Sweepstakes
             contestant.registrationNumber = contestants.Count + 1;
             contestants.Add(contestant.registrationNumber, contestant);          
         }
-        public int PickWinner(Contestant contestant)
+        public int PickWinner()
         {
             int winningNumber = randomNumber.Next(1, contestants.Count);
             return winningNumber;
         }
         public void PrintContestantInfo(Contestant contestant)
         {
-            int winner = PickWinner(contestant);
+            int winner = PickWinner();
+            foreach(KeyValuePair<int, Contestant> registrationNumber in contestants)
+            {
+                if(winner == contestant.registrationNumber)
+                {
+                    UserInterface.PrintWinner(contestant);
+                    break;
+                }
+            }
         }
 
     }
