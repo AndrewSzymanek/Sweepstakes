@@ -27,7 +27,7 @@ namespace Sweepstakes
         }
         public int PickWinner()
         {
-            int winningNumber = randomNumber.Next(1, contestants.Count);
+            int winningNumber = randomNumber.Next(1, contestants.Count + 1);
             return winningNumber;
         }
         public void PrintContestantInfo(Contestant contestant)
