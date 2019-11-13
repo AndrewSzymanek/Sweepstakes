@@ -10,16 +10,9 @@ namespace Sweepstakes
     {
         static void Main(string[] args)
         {
-            MarketingFirm marketing;
-            string choice = UserInterface.ChooseStackOrQueue();
-            if (choice == "queue")
-            {
-                marketing = new MarketingFirm(new SweepstakesQueueManager());
-            }
-            else if(choice == "stack")
-            {
-                marketing = new MarketingFirm(new SweepstakesStackManager());
-            }          
+            //manager = factory method 
+            ISweepstakesManager manager = Factory.ChooseManager();
+            MarketingFirm marketing = new MarketingFirm(manager);           
         }
     }
 }

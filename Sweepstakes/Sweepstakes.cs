@@ -6,20 +6,15 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class Sweepstakes
+    public class Sweepstakes
     {
-        //member variables
         Random randomNumber;
         Dictionary<int, Contestant> contestants;
 
-        //constructor
         public Sweepstakes(string name)
         {
             contestants = new Dictionary<int, Contestant>();
         }
-
-        //member methods
-        
         public void RegisterContestant(Contestant contestant)
         {
             contestant.registrationNumber = contestants.Count + 1;

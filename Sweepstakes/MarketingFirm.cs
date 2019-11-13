@@ -21,9 +21,6 @@ namespace Sweepstakes
         {
             newSweepstake = new Sweepstakes(UserInterface.GetSweepstakeName());
             manager.InsertSweepstakes(sweepstakes);
-            sweepstakes.RegisterContestant(contestant);
-            sweepstakes.PickWinner();
-            sweepstakes.PrintContestantInfo(contestant);
         }
     }
 }
