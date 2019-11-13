@@ -38,5 +38,11 @@ namespace Sweepstakes
             return choice;
            
         }
+        public static string GetSweepstakeName()
+        {
+            Console.WriteLine("What is the name of your sweepstake?");
+            string name = Console.ReadLine();
+            return name;
+        }
     }
 }
