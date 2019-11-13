@@ -30,6 +30,5 @@ namespace Sweepstakes
         {
              UserInterface.PrintWinner(contestant);        
         }
-
     }
 }

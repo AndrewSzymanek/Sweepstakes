@@ -16,7 +16,6 @@ namespace Sweepstakes
             this.manager = manager;
         }
 
-        //member methods
         public void CreateSweepstakes(Sweepstakes sweepstakes, Contestant contestant)
         {
             newSweepstake = new Sweepstakes(UserInterface.GetSweepstakeName());

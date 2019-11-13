@@ -23,7 +23,5 @@ namespace Sweepstakes
             Sweepstakes sweepstakes = stack.Pop();
             return sweepstakes;
         }
-
-       
     }
 }

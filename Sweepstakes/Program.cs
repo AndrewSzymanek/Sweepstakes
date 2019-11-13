@@ -10,9 +10,8 @@ namespace Sweepstakes
     {
         static void Main(string[] args)
         {
-            //manager = factory method 
             ISweepstakesManager manager = Factory.ChooseManager();
-            MarketingFirm marketing = new MarketingFirm(manager);           
+            MarketingFirm marketing = new MarketingFirm(manager);          
         }
     }
 }
