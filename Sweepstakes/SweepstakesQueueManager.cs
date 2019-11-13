@@ -24,8 +24,7 @@ namespace Sweepstakes
         }
         public Sweepstakes GetSweepstakes()
         {
-            Sweepstakes sweepstakes = queue.Dequeue();
-                   
+            Sweepstakes sweepstakes = queue.Dequeue();                  
             return sweepstakes;
         }
 

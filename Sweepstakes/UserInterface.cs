@@ -31,5 +31,12 @@ namespace Sweepstakes
         {
             Console.WriteLine($"The winner is: {contestant.firstName} {contestant.lastName}, {contestant.emailAddress}.");
         }
+        public static string ChooseStackOrQueue()
+        {
+            Console.WriteLine("Write 'stack' or 'queue' to choose where you're storing your sweepstake.");
+            string choice = Console.ReadLine();
+            return choice;
+           
+        }
     }
 }
