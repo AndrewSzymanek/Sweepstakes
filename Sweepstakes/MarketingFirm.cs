@@ -8,7 +8,7 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
-        Sweepstakes sweepstakes;
+        Sweepstakes newSweepstake;
         public ISweepstakesManager manager;
 
         public MarketingFirm(ISweepstakesManager manager)
@@ -19,7 +19,7 @@ namespace Sweepstakes
         //member methods
         public void CreateSweepstakes(Sweepstakes sweepstakes, Contestant contestant)
         {
-            Sweepstakes newSweepstake = new Sweepstakes(UserInterface.GetSweepstakeName());
+            newSweepstake = new Sweepstakes(UserInterface.GetSweepstakeName());
             manager.InsertSweepstakes(sweepstakes);
             sweepstakes.RegisterContestant(contestant);
             sweepstakes.PickWinner();
