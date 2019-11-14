@@ -8,7 +8,6 @@ namespace Sweepstakes
 {
     public static class UserInterface
     {
-
         public static string GetFirstName()
         {          
             Console.WriteLine("Please enter your first name.");
@@ -35,8 +34,7 @@ namespace Sweepstakes
         {
             Console.WriteLine("Write 'stack' or 'queue' to choose where you're storing your sweepstake.");
             string choice = Console.ReadLine();
-            return choice;
-           
+            return choice;     
         }
         public static string GetSweepstakeName()
         {
